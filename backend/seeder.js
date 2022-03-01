@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import colors from "colors";
 import users from "./data/users.js";
-import User from "./models/userModel.js";
+import User from "./models/User.js";
 import connectDB from "./config/db.js";
 
 dotenv.config();
