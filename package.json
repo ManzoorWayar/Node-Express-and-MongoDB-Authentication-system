@@ -5,7 +5,8 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "server": "nodemon server.js"
+    "start": "node backend/server",
+    "server": "nodemon backend/server"
   },
   "author": "Manozoor Ahmad Wayar",
   "license": "ISC",
