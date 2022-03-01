@@ -4,7 +4,7 @@ import colors from "colors";
 
 const app = express();
 
-// Config Enviroment Vars
+// Config env vars
 dotenv.config();
 
 const PORT = process.env.PORT | 5000;
