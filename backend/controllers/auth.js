@@ -142,7 +142,7 @@ const resetPassword = asyncHandler(async (req, res, next) => {
 
   if (!user) {
     res.status(400);
-    throw new Error("Invalid Token!");
+    throw new Error("User Not Found!");
   }
 
   // Set new password
