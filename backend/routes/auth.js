@@ -8,9 +8,14 @@ import {
   resetPassword,
 } from "../controllers/auth.js";
 
+import imgUploader from "../utils/imgUploader.js";
+
 router.post("/register", register);
 router.post("/login", login);
 router.get("/logout", logout);
+router.post("/upload", imgUploader.single("image"), (req, res) =>
+  res.send(`/${req.file.path.replace("\\", "/")}`)
+);
 router.post("/forgotPassword", forgotPassword);
 router.put("/resetPassword/:resettoken", resetPassword);
 
